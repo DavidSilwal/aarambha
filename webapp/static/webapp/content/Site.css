@@ -1,0 +1,296 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+
+position: relative;
+top: 20px;
+	bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
+*/
+    #owl-demo .item{
+    }
+    #owl-demo .item img{
+        display: block;
+        height: auto;
+    }
+
+.owl-theme .owl-controls{
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	width: 33px;
+	height: 54px;
+}
+.owl-next{
+	background: url(../images/divice-pagenations.png) no-repeat -35px 0px;
+	position: absolute;
+	right: -8%;
+	top: 30%;
+}
+.owl-prev{
+	background: url(../images/divice-pagenations.png) no-repeat 0px 0px;
+	position: absolute;
+	left: -16.5%;
+	top: 30%;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #3A3A3A;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/*-- banner --*/
+.banner{
+	background:url(../images/banner.jpg) no-repeat;
+	background-size:cover;
+	min-height:835px;
+}
+
+.banner-grids {
+  margin-top: 20em;
+}
+.banner-grid h3{
+	background:#4dc47d;
+	color:#fff;
+	padding:0.5em;
+	border-left:3px solid #4dc47d;
+	font-family: 'Ubuntu-Medium';
+}
+.banner-grid-sec{
+	height: 315px;
+	border:4px solid #4dc47d;
+	margin-top:1em;
+	background:#fff;
+	padding:1em;
+	padding-left: 0px; padding-right: 0px;
+	margin-bottom: 20px;
+
+}
+.div.col-md-4 > h3,h2,p,span{
+	margin: 14px;
+}
+
+.news-grid {
+	margin-bottom:11px;
+}
+.news-grid:nth-child(4) {
+  margin-bottom: 0;
+}
+.news-grid h4 a{
+  display:inline-block;
+  margin-bottom:3px;
+  font-size:1em;
+  color:#4dc47d;
+  text-decoration:none;
+  font-family: 'Ubuntu-Medium';
+}
+.news-ltr h4 a{
+ display:inline-block;
+  margin-bottom:3px;
+  font-size:1.15em;
+  color:#4dc47d;
+  text-decoration:none;
+  font-family: 'Ubuntu-Medium';
+}
+.banner-grid form{
+	margin-top:1.5em;
+}
+.banner-grid form input[type="text"]{
+  width: 100%;
+  margin-bottom:1em;
+  padding: 8px;
+  border: 1px solid #b7b7b7;
+  font-size:0.9em;
+  margin-bottom: 2.5em;
+  color: #4dc47d;
+  outline: none;
+}
+.banner-grid form input[type="submit"] {
+  color: #fff;
+  background: #4dc47d;
+  font-size: 0.9em;
+  text-decoration: none;
+ border:2px solid #4dc47d;
+  outline:none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 6px 0px;
+  transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+  display: block;
+}
+.banner-grid form input[type="submit"]:hover{
+		border:2px solid #4dc47d;
+		background:transparent;
+		color:#4dc47d;
+}
+
+.banner-grid-sec h2 ,.banner-grid-sec hr {
+ margin-top: 0px;margin-bottom: 0px;
+}
+
+p{
+	text-align: justify;
+}
+
+body{
+
+	background: url('../images/backgroundImg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+
+	}
+	
+	footer{
+
+
+		background: rgba(8, 41, 93, 0.82);
+		/* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left top, dodgerblue,darkblue); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, dodgerblue,darkblue); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right,dodgerblue,darkblue); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, dodgerblue,darkblue); /* Standard syntax */
+
+
+
+	}
+	
+	.item active img{
+		width: 100%;
+	}
+	
+	.col-md-2 > div > h3 {
+		margin-top: 10px;
+	}
+	
+	div.col-md-2 > div {
+		padding-left: 0px;
+	}
+	
+	.sabin{
+		background: rebeccapurple;
+	}
+	
+	.banner-sec-hr {
+		
+		padding-left: 0px;
+		padding-right: 0px;
+		
+		border:2px solid #4dc47d;
+	
+		
+		
+	}
+	
+.hr-border{
+	
+	border:2px solid #4dc47d;
+}
+
+footer{
+	position: absolute;
+	width: 100%;
+	margin-top: 20px;
+}
+

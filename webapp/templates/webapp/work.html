@@ -1,0 +1,23 @@
+{% extends "webapp/layout.html" %}
+
+{% block content %}
+
+<div>
+    {% for item in work %}
+    <h2>{{item.title}}</h2>
+
+    {% if item.image %}
+    {{item.image}}
+    {% endif %}
+
+    <p>
+         {{item.text}}
+    </p>
+    <span>
+         on {{item.pub_date}}
+    </span>
+ <hr class="hr-border"/>
+    {% endfor %}
+</div>
+
+{% endblock %}

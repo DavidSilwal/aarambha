@@ -1,0 +1,88 @@
+{% extends "webapp/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row">
+                    <div class="team-member-container col-md-6">
+                        <div class="row">
+                            <div class="col-sm-3 team-member-photo">
+                                <img class="img-circle img-responsive" alt="anjana" src="{% static 'webapp/images/Executive_Member/Anjana_Adhikari.jpeg' %}">
+                                <img class="img-responsive" alt="anjana signature" src="{% static 'webapp/images/Executive_Member/Anjana_Adhikari_sign.jpg' %}" width="100%">
+                            </div>
+                            "
+                            <div class="col-sm-9 team-member-text">
+                                <h4>Anjana Adhikari</h4>
+                                <div class="job-title">Founder &amp; CEO</div>
+                                <div class="bio">
+                                    <p>.</p>
+                                    <p>.</p>
+                                </div>
+                                <div class="location"><span>Location:</span> Kathmandu</div>
+                                <div class="quote">
+                                    <blockquote style="visibility: visible; ">
+                                        “”
+                                        <!--<footer><cite title="Rodney Mullen">Rodney Mullen</cite></footer>-->
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member-container col-md-6">
+                        <div class="row">
+                            <div class="col-sm-3 team-member-photo">
+                                 <img class="img-circle img-responsive" alt="Arjun" src="{% static 'webapp/images/Executive_Member/Arjun_Ghimire.jpg' %}">
+                                <img class="img-responsive" alt="Arjun Signature" src="{% static 'webapp/images/Executive_Member/Arjun_Ghimire_sign.jpg' %}" width="100%">
+                            </div>
+                            <div class="col-sm-9 team-member-text">
+                                <h4>Arjun Ghimire</h4>
+                                <div class="job-title"></div>
+                                <div class="bio">
+                                    <p>.</p>
+                                    <p>.</p>
+                                </div>
+                                <div class="location"><span>Location:</span> Kathmandu</div>
+                                <div class="quote">
+                                    <blockquote style="visibility: visible; ">
+                                        “.”
+                                        <footer><cite title="Swedish Proverb"></cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">Members</div>
+
+
+<table class="table table-bordered">
+ 
+ <tr>
+ <th>FirstName</th>
+ <th>LastName</th>
+ <th>Contact No</th> 
+ <th>Email</th>
+ <th>Facebook</th>
+ <th>Designation</th>   
+ </tr>   
+ 
+ {% for item in member %}
+ <tr>
+     
+ <td>{{item.first_name}}</td>
+ <td>{{item.last_name}}</td>
+ <td>{{item.contact_no}}</td> 
+ <td>{{item.email}}</td>
+ <td>{{item.facebook}}</td>
+ <td>{{item.designation}}</td>
+ </tr>
+ 
+ {% endfor %}
+ 
+ </table>
+</div>
+{% endblock %}

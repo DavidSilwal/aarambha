@@ -1,0 +1,22 @@
+{% extends "webapp/layout.html" %}
+
+{% block content %}
+
+<div>
+    {% for item in blog %}
+    <h2>{{item.title}}</h2>
+    <p>
+         {{item.text}}
+    </p>
+    <span>
+         Written by {{item.author}}, {{item.email}} on {{item.date_pub}}
+    </span>
+    {% if item.image %}
+    {{item.image}}
+    {% endif %}
+    <hr class="hr-border"/>
+
+    {% endfor %}
+</div>
+
+{% endblock %}

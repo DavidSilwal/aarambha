@@ -1,0 +1,28 @@
+{% extends "webapp/layout.html" %}
+
+{% block content %}
+
+<div>
+    {% for item in event %}
+    
+    <h2>{{item.title}}</h2>
+    <p>
+         {{item.text}}
+    </p>
+    <span>
+          {{item.description}}
+          {{item.event_date}}
+          {{item.status}}
+          
+         on {{item.pub_date}}
+    </span>
+    
+    {% if item.image %}
+    {{item.image}}
+    {% endif %}
+
+ <hr class="hr-border"/>
+    {% endfor %}
+</div>
+
+{% endblock %}

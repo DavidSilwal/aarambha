@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - aarambha foundation</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/content/site.css' %}" />
+    
+    <script src="{% static 'webapp/scripts/bootstrap.js' %}" > </script>
+    <script src="{% static 'webapp/scripts/bootstrap.min.js' %}" ></script>
+    <script src="{% static 'webapp/scripts/modernizr-2.6.2.js' %}" ></script>
+    <script src="{% static 'webapp/scripts/jquery.js' %}" ></script>
+    <script src="{% static 'webapp/scripts/bootstrap.js' %}"></script>
+</head>
+
+<body style="background:url(aarambha\webapp\static\webapp\images\backgroundImg.jpg) cover scroll">
+<header>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top " >
+        <div class="container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">aarambha |</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'blog' %}">Blog Feed</a></li>
+                                     
+                </ul>
+             </div>
+        </div>
+    </div>
+</header>
+    <div class="container body-content">
+    {% block content %}
+    {% endblock %}
+    </div>
+   
+
+  
+{% block scripts %}
+{% endblock %}
+
+<footer>
+     <div class="container">
+                <div class="row" style="margin-left:2px; margin-right:2px;">
+
+                <div class="col-md-2" style="width:115px;"  >
+                <h4><strong><u>Sitemaps</u></strong></h4>
+                <h5><a href="{% url 'about' %}"> About</a></h5>
+                <h5><a href="{% url 'aboutus' %}"> About Us</a></h5>
+                <h5><a href="{% url 'faq' %}">FAQ</a></h5>
+                <h5><a href="{% url 'whoweare' %}">Who We Are</a></h5>
+                <h5><a href="{% url 'whatwedo' %}">What We Do</a></h5>
+                <h5><a href="{% url 'contact' %}">Contact</a></h5>
+                <h5><a href="{% url 'blog' %}">Blog Feed</a></h5>
+                <h5><a href="{% url 'event' %}">Our Events</a></h5>
+                <h5><a href="{% url 'work' %}">Our Works</a></h5>
+                </div>
+
+                <div class="col-md-1 ">
+                    <h4><strong><u>Get involved</u></strong></h4>
+                    <h5><a href="{% url 'working' %}">Support</a></h5>
+                    <h5><a href="{% url 'working' %}">Donate</a></h5>
+                    <h5><a href="{% url 'working' %}">Join</a></h5>
+                    <h5><a href="{% url 'working' %}">Volunteer</a></h5>
+                </div>
+
+                <div class="col-md-1">
+                <h4><strong><u>News</u></strong></h4>
+                <h5><a href="{% url 'working' %}">Campaign</a></h5>
+                <h5><a href="{% url 'working' %}">Research</a></h5>
+                </div>
+
+                <div class="col-md-3">
+                <h4><strong><u>Stay Touch With Us</u></strong></h4>
+                <h5><a href="#">Facebook</a></h5>
+                <h5><a href="#">Twitter</a></h5>
+                <h5><a href="#">Instagram</a></h5>
+                <h5><a href="#">Google</a></h5>
+                </div>
+
+                <div class="col-md-2 ">
+                    <div class="container">                        
+                <h3>David Silwal</h3>                
+                <center><img class="img-circle" src="{% static 'webapp/images/david.jpg' %}" width="75x" height="75px"/>
+                    </center>
+                        
+                    <h4>Core Developer </h4>
+                        de.davidsilwal@gmail.com<br/>
+                        www.davidsilwal.com.np
+                       
+                </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="container">
+                <h3>Sabin Silwal</h3>
+                 <center><img class="img-circle" src="{% static 'webapp/images/sabin.jpg' %}" width="75x" height="75px"/> </center>
+                 
+                  <h4>Designer</h4>
+                   sabin.silwal2002@gmali.com<br/>
+                www.sabinsilwal.com.np
+                </div>
+                </div>
+                </div>
+<div class="row">
+    <div class="container">
+        
+<p>&copy; {{year}} - aarambha foundation</p>
+aarambha foundation is a registered foundation in nepal
+    </div>
+</div>
+         </div>
+    </footer>
+</body>
+</html>
